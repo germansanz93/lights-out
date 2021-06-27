@@ -1,0 +1,16 @@
+.Board{
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: repeat(5, 80px);
+  grid-gap: 0;
+}
+.Board h2 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: lightblue;
+  font-size: 3rem;
+  text-align: center;
+}

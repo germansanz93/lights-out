@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'BigShouldersStencil';
+  src: local('BigShouldersStencil'), url(./fonts/Big_Shoulders_Stencil_Display/BigShouldersStencilDisplay-ExtraBold.ttf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
