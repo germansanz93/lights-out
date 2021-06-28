@@ -66,12 +66,14 @@ r.forEach((row) => {
   rMatrix.push(...a);
 })
 
-//creates solution vector
-const solution = []
-for (let i = 0; i < rMatrix.length; i++) {
-  solution.push(Math.floor(Math.random() * 2));
+function createSolution(){
+  //creates solution vector
+  const solution = []
+  for (let i = 0; i < rMatrix.length; i++) {
+    solution.push(Math.floor(Math.random() * 2));
+  }
+  return solution;
 }
-console.log(solution);
 
 //creates a new game with the r array and the solution vector
 
@@ -87,6 +89,13 @@ function cartesianProduct(arr1, arr2) {
   return result
 }
 
-const game = cartesianProduct(rMatrix, solution).map((el) => el%2);
+let solution = createSolution();
+let game = cartesianProduct(rMatrix, solution).map((el) => el%2);
 
-export {game, solution}
+const createGame = () => {
+  solution = createSolution();
+  game = cartesianProduct(rMatrix, solution).map((el) => el%2);
+  return {game, solution}
+}
+
+export {game, solution, createGame}

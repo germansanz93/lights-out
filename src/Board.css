@@ -5,7 +5,7 @@
   grid-template-columns: repeat(5, 80px);
   grid-gap: 0;
 }
-.Board h2 {
+.Board .endGame{
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -13,4 +13,21 @@
   color: lightblue;
   font-size: 3rem;
   text-align: center;
+}
+
+.Board button {
+  background-color: #66F;
+  color: #000;
+  border: none;
+  font-family: BigShouldersStencil;
+  padding: 1rem;
+  margin: 4rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 27;
 }
