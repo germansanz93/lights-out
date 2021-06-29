@@ -2,7 +2,7 @@
   display: grid;
   width: auto;
   height: auto;
-  grid-template-columns: repeat(5, 80px);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 0;
 }
 .Board .endGame{
@@ -22,12 +22,18 @@
   font-family: BigShouldersStencil;
   padding: 1rem;
   margin: 4rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   margin-top: 3rem;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 6;
-  grid-row-end: 27;
+  grid-row-end: 6;
+}
+
+@media (min-width: 576px){
+  .Board button {
+    font-size: 2rem;
+  }
 }

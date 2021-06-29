@@ -1,7 +1,7 @@
 .App{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -11,12 +11,13 @@
 }
 
 .App h1{
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 2rem;
   text-transform: uppercase;
   color: rgb(102, 102, 255);
-  padding: 3rem;
-  padding-left: 4rem;
+  padding: 3.5rem;
+  padding-left: 5rem;
+  text-align: center;
 }
 
 .neon {
@@ -51,5 +52,12 @@
     0 0 100px rgba(38,104,127,1),
     0 0 140px rgba(38,104,127,1),
     0 0 180px rgba(38,104,127,1);
+  }
+}
+
+@media (min-width: 515px){
+  .App h1{
+    font-size: 4rem;
+    text-align: center;
   }
 }

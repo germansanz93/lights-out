@@ -1,6 +1,6 @@
 .Cell {
-  width: 80px;
-  height: 80px;
+  width: 18vw;
+  height: 18vw;
   border: 2px solid #001;
 }
 
@@ -10,4 +10,12 @@
 
 .Cell.off {
   background-color: lightblue;
+}
+
+@media (min-width: 576px){
+  .Cell {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #001;
+  }
 }
